@@ -1,0 +1,44 @@
+KIET GROUP OF INSTITUTIONS
+NAME – ARYAN SINGH
+BRANCH – ECE
+SECTION - A
+U.ID – 202501100700047
+
+
+
+
+
+
+# Grocery Store Billing System
+
+
+
+print("   Welcome to Aryan Mart! ")
+
+
+# Ask the customer to enter price of 3 items
+price1 = float(input("Enter price of item 1 ($): "))
+price2 = float(input("Enter price of item 2 ($): "))
+price3 = float(input("Enter price of item 3 ($): "))
+
+# Calculate the total cost of all 3 items
+total = price1 + price2 + price3
+
+# Check if total is more than $50 to apply discount
+if total > 50:
+    discount = total * 0.10       # 10% discount
+else:
+    discount = 0                  # No discount
+
+# Calculate the final amount after discount
+final_amount = total - discount
+
+# Display the bill
+print("         YOUR BILL            ")
+print("Item 1: $", price1)
+print("Item 2: $", price2)
+print("Item 3: $", price3)
+print("Original Total: $", total)
+print("Discount (10%): $", discount)
+print("Final Amount  : $", final_amount)
+print("   Thank you for shopping!    ")
